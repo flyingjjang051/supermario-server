@@ -1,0 +1,55 @@
+<%- include("include/header"); %>
+<main id="main">
+  <div id="contents">
+    <form action="/register" method="POST" id="join" class="formBox" enctype="multipart/form-data">
+      <div class="inputBox">
+        <label>
+          <span class="label">title</span>
+          <input type="text" id="title" name="title" placeholder="제목을 입력하세요" />
+        </label>
+      </div>
+      <div class="inputBox">
+        <label>
+          <span class="label">백그라운드</span>
+          <input type="text" id="bg" name="bg" placeholder="백그라운드" />
+        </label>
+      </div>
+      <div class="inputBox">
+        <label>
+          <span class="label">설명</span>
+          <textarea name="desc" id="desc"></textarea>
+        </label>
+      </div>
+      <div class="inputBox">
+        <label>
+          <span class="label">링크</span>
+          <input type="text" name="link" id="link" />
+        </label>
+      </div>
+      <div class="inputBox">
+        <label>
+          <span class="label">카테고리</span>
+          <div>
+            <span>mario</span>
+            <input type="radio" name="category" value="mario" class="category" />
+            <span>monster</span>
+            <input type="radio" name="category" value="monster" class="category" />
+          </div>
+        </label>
+      </div>
+
+      <div class="inputBox">
+        <label>
+          <span class="label">대표이미지</span>
+          <input type="file" name="image" id="image" multiple />
+        </label>
+      </div>
+      <div class="btns">
+        <button type="submit" id="btnJoin">확인</button>
+        <button type="reset">취소</button>
+      </div>
+    </form>
+  </div>
+</main>
+<script></script>
+<%- include("include/footer"); %>
